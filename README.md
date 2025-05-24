@@ -2,8 +2,6 @@
 
 ### Earth Space Force: MATH OPS DIVISION - Defense Protocols
 
-![Cover](src/media/textures/cover/001.jpg)
-
 ---
 
 # Missions:  
@@ -11,6 +9,10 @@
 * [Mission 001 - supply_drop_inner_circle](src/missions/mission_001/supply_drop_inner_circle/supply_drop_inner_circle.md)
 
 * [Mission 002 - perimeter_breach_radius](src/missions/mission_002/perimeter_breach_radius/perimeter_breach_radius.md)
+
+---
+
+![Cover](src/media/textures/cover/001.jpg)
 
 ---
 
