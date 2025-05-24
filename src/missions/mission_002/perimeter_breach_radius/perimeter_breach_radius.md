@@ -41,7 +41,7 @@ You must solve for **x**, the cloaking radius of each enemy cluster.
 
 ### Your Role:
 
-Your unit is responsible for calibrating the long range mortars.  
+Your unit is responsible for calibrating the long-range mortars.  
 The mortars cannot fire unless the cloaking radius is known, to avoid wasting precious payloads.
 
 If you miscalculate, you risk a failed strike and enemy infiltration.
@@ -57,40 +57,123 @@ If you miscalculate, you risk a failed strike and enemy infiltration.
 // equation: 2x + 3 = 11
 
 let total = 11;
-let added = 3;
-let coefficient = 2;
+let deadZone = 3;
+let clusters = 2;
 
-/* subtract 3 from both sides */
-let reduced = total - added;
+/* subtract dead zone from total interference width */
+let reduced = total - deadZone;
 
-/* divide by 2 to get x */
-let x = reduced / coefficient;
+/* divide by number of clusters to isolate x */
+let x = reduced / clusters;
 
-console.log("The value of x is: " + x);
+console.log("The cloaking radius x is: " + x);
 
-// The value of x is: 4
+// The cloaking radius x is: 4
+````
 
-```
+---
 
-# **PY** 
+# **PY**
+
 ```python
 # equation: 2x + 3 = 11
 
 total = 11
-added = 3
-coefficient = 2
+dead_zone = 3
+clusters = 2
 
-# subtract 3 from both sides
-reduced = total - added
+# subtract dead zone from total interference width
+reduced = total - dead_zone
 
-# divide by 2 to get x
-x = reduced / coefficient
+# divide by number of clusters to isolate x
+x = reduced / clusters
 
-print("The value of x is:", x)
+print("The cloaking radius x is:", x)
 
-# The value of x is: 4
+# The cloaking radius x is: 4
+```
+
+---
+
+# 🛰️ SOLVING `2x + 3 = 11`
 
 ```
+2x + 3 = 11
+```
+
+Where:
+
+* 🧲 `2x` = combined cloaking radius from 2 enemy troop clusters
+* ⚠️ `+ 3` = additional 3 km signal-dead zone
+* 🛰️ `= 11` = total interference width detected by drone scans
+
+We must extract the unknown `x`: the **cloaking radius per enemy cluster**.
+
+---
+
+### 🧩 Step-by-Step Tactical Decryption
+
+#### 🔻 STEP 1: Eliminate the Constant (Dead Zone)
+
+Start with:
+
+```
+2x + 3 = 11
+```
+
+Subtract **3** from both sides:
+
+```
+2x + 3 - 3 = 11 - 3
+```
+
+Simplifies to:
+
+```
+2x = 8
+```
+
+> 🎯 Objective 1: Dead zone subtracted. Cloaking radius isolated.
+
+---
+
+#### 🔻 STEP 2: Divide Out the Coefficient (2 Clusters)
+
+Divide both sides by **2**:
+
+```
+2x / 2 = 8 / 2
+```
+
+Result:
+
+```
+x = 4
+```
+
+> 🎯 Objective 2: Radius per cluster identified.
+
+---
+
+### ✅ Final Answer
+
+```
+x = 4
+```
+
+Each **enemy cluster** is surrounded by a **4 km cloaking radius**.
+
+---
+
+### 💡 Tactical Lesson:
+
+To solve `2x + 3 = 11`:
+
+* subtract constants
+* isolate the variable
+* divide and conquer
+
+> 🧠 *"In war, just like in algebra, clarity crushes chaos."*
 
 ---
 
