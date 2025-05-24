@@ -2,6 +2,8 @@
 
 ### Earth Space Force: MATH OPS DIVISION - Defense Protocols
 
+![Cover](src/media/textures/cover/001.jpg)
+
 ---
 
 # Missions:  
